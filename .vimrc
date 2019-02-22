@@ -13,6 +13,7 @@ exec  'set undodir='.s:path.'/tmp/.backup'
 
 exec 'source '.s:path.'/vimfiles/autoload/plug.vim'
 exec 'source '.s:path.'/plugconfig/nerdtree'
+exec 'source '.s:path.'/plugconfig/aireline_devicons_nerd_fonts'
 exec 'source '.s:path.'/common/config'
 exec 'source '.s:path.'/gvimconf/config'
 exec 'source '.s:path.'/winconf/config'
@@ -26,5 +27,12 @@ call plug#begin(s:path.'/vimfiles/plugged')
 Plug 'mattn/emmet-vim'
 " https://github.com/scrooloose/nerdtree
 Plug 'scrooloose/nerdtree'
+" Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more
+Plug 'ryanoasis/vim-devicons'
+" lean & mean status/tabline for vim that's light as air
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Insert or delete brackets, parens, quotes in pair.
+Plug 'jiangmiao/auto-pairs'
 " Initialize plugin system
-call plug#end()
+call plug#end() 
