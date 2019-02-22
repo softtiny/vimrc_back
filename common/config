@@ -1,0 +1,14 @@
+" line numbers
+set number
+
+" When unloading a buffer Vim normally destroys the tree of undos created for
+" that buffer.  By setting the 'undofile' option, Vim will automatically save
+" your undo history when you write a file and restore undo history when you edit
+" the file again.
+set undofile
+
+" How to view UTF-8 Characters in VIM or Gvim
+set fileencodings=utf-8,gbk,utf-16le,cp1252,iso-8859-15,ucs-bom
+set termencoding=utf-8
+set encoding=utf-8
+set fileformats=unix,dos,mac
