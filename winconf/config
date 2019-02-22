@@ -1,0 +1,6 @@
+if has("windows")
+    set shell=C:\home\mac\home\app\cmder\Cmder.exe
+    set shellpipe=|
+    set shellredir=>
+    set shellcmdflag=
+endif
