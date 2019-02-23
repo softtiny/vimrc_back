@@ -4,8 +4,8 @@ let g:airline_powerline_fonts = 1
 
 if has("win64") || has("win32") || has("win16")
 " <FONT_NAME>:h<FONT_SIZE>
-    set guifont=GoMono\ NF:h16
+    set guifont=DroidSansMono\ NF:h16
 else
 " <FONT_NAME> <FONT_SIZE>
-    set guifont=GoMono\ 16
+    set guifont=DroidSansMono\ NF\ 16
 endif
