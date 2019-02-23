@@ -14,6 +14,7 @@ exec  'set undodir='.s:path.'/tmp/.backup'
 exec 'source '.s:path.'/vimfiles/autoload/plug.vim'
 exec 'source '.s:path.'/plugconfig/nerdtree'
 exec 'source '.s:path.'/plugconfig/aireline_devicons_nerd_fonts'
+exec 'source '.s:path.'/plugconfig/YouCompleteMe'
 exec 'source '.s:path.'/common/config'
 exec 'source '.s:path.'/gvimconf/config'
 exec 'source '.s:path.'/winconf/config'
@@ -34,5 +35,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Insert or delete brackets, parens, quotes in pair.
 Plug 'jiangmiao/auto-pairs'
+" A code-completion engine for Vim
+Plug 'Valloric/YouCompleteMe'
+
 " Initialize plugin system
 call plug#end() 
