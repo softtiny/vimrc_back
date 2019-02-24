@@ -1,6 +1,7 @@
 
 " current vimrc parent folder path
 let s:path = fnamemodify(resolve(expand('<sfile>:p')), ':h')
+let g:rootTmpPath=s:path.'/tmp'
 
 " backup
 " If you want all the swap(.swp), backup(~) files in a separate folder say
