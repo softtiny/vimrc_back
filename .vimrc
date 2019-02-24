@@ -10,14 +10,15 @@ exec  'set directory='.s:path.'/tmp/.backup/.'
 exec  'set undodir='.s:path.'/tmp/.backup'
 
 
-
 exec 'source '.s:path.'/vimfiles/autoload/plug.vim'
-exec 'source '.s:path.'/plugconfig/nerdtree'
-exec 'source '.s:path.'/plugconfig/aireline_devicons_nerd_fonts'
-exec 'source '.s:path.'/plugconfig/YouCompleteMe'
-exec 'source '.s:path.'/common/config'
-exec 'source '.s:path.'/gvimconf/config'
-exec 'source '.s:path.'/winconf/config'
+if exists(':NERDtree')
+	exec 'source '.s:path.'/plugconfig/nerdtree'
+	exec 'source '.s:path.'/plugconfig/aireline_devicons_nerd_fonts'
+	exec 'source '.s:path.'/plugconfig/YouCompleteMe'
+	exec 'source '.s:path.'/common/config'
+	exec 'source '.s:path.'/gvimconf/config'
+	exec 'source '.s:path.'/winconf/config'
+endif
 " set $PATHMYVIM to file papth
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
