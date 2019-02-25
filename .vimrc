@@ -39,7 +39,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end() 
 
 
-exec 'source '.s:path.'/plugconfig/dracula'
+" exec 'source '.s:path.'/plugconfig/dracula'
 exec 'source '.s:path.'/plugconfig/nerdtree'
 exec 'source '.s:path.'/plugconfig/aireline_devicons_nerd_fonts'
 exec 'source '.s:path.'/plugconfig/YouCompleteMe'
