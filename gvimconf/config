@@ -1,6 +1,5 @@
 let s:path = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 if has("gui_running") 
-	exec 'source '.s:path.'/darkspectrum.vim'
 	" let's maximize the gvim window 
 	set lines=99999 columns=99999 
 else 
