@@ -34,18 +34,13 @@ Plug 'Valloric/YouCompleteMe'
 
 " Initialize plugin system
 call plug#end() 
-if exists(':NERDtree')
-	exec 'source '.s:path.'/plugconfig/nerdtree'
-	exec 'source '.s:path.'/plugconfig/aireline_devicons_nerd_fonts'
-	exec 'source '.s:path.'/plugconfig/YouCompleteMe'
-	exec 'source '.s:path.'/common/config'
-	exec 'source '.s:path.'/gvimconf/config'
-	exec 'source '.s:path.'/winconf/config'
-endif
+
+
 exec 'source '.s:path.'/plugconfig/nerdtree'
 exec 'source '.s:path.'/plugconfig/aireline_devicons_nerd_fonts'
 exec 'source '.s:path.'/plugconfig/YouCompleteMe'
 exec 'source '.s:path.'/common/config'
 exec 'source '.s:path.'/gvimconf/config'
 exec 'source '.s:path.'/winconf/config'
+
 
