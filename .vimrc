@@ -31,8 +31,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'jiangmiao/auto-pairs'
 " A code-completion engine for Vim
 Plug 'Valloric/YouCompleteMe'
-
-
+" A dark theme for Vim and 50+ apps
+Plug 'dracula/vim', { 'as': 'dracula' }
 " Initialize plugin system
 call plug#end() 
 
@@ -40,6 +40,7 @@ call plug#end()
 exec 'source '.s:path.'/plugconfig/nerdtree'
 exec 'source '.s:path.'/plugconfig/aireline_devicons_nerd_fonts'
 exec 'source '.s:path.'/plugconfig/YouCompleteMe'
+exec 'source '.s:path.'/plugconfig/dracula'
 exec 'source '.s:path.'/common/config'
 exec 'source '.s:path.'/gvimconf/config'
 exec 'source '.s:path.'/winconf/config'
