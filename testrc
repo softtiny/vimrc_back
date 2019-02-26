@@ -1,0 +1,13 @@
+echo resolve(expand('<sfile>:p'))
+echo expand('sfile:p')
+let s:path = 'sdds
+\ 232
+\ 234asd
+\ ds'
+echo s:path
+exec 'echo s:path'
+function! s:sofilefn(appstr)
+    let s:tte=s:path.a:appstr
+    echo s:tte
+endfunction
+call s:sofilefn('324')
