@@ -51,3 +51,26 @@ else
 		" set columns=90 
 	" endif 
 endif 
+
+" configure expanding of tabs for various file types
+au BufRead,BufNewFile *.py set expandtab
+
+" --------------------------------------------------------------------------------
+" configure editor with tabs and nice stuff...
+" --------------------------------------------------------------------------------
+set expandtab           " enter spaces when tab is pressed
+set textwidth=120       " break lines when line length increases
+" Always keep 'tabstop' at 8, set 'softtabstop' and 'shiftwidth' to 4 (or 3 or whatever you prefer) and use 'noexpandtab'. Then Vim will use a mix of tabs and spaces, but typing and will behave like a tab appears every 4 (or 3) characters.
+
+" Note: Setting 'tabstop' to any other value than 8 can make your file appear wrong in many places (e.g., when printing it).
+set tabstop=8           " use 4 spaces to represent tab
+set softtabstop=4
+set shiftwidth=4        " number of spaces to use for auto indent
+set autoindent          " copy indent from current line when starting a new line
+
+" make backspaces more powerfull
+set backspace=indent,eol,start
+
+set ruler                           " show line and column number
+syntax on               " syntax highlighting
+set showcmd             " show (partial) command in status line
