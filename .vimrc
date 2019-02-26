@@ -1,4 +1,4 @@
-
+set nocompatible
 " current vimrc parent folder path
 let s:path = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 let g:rootTmpPath=s:path.'/tmp'

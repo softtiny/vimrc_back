@@ -13,7 +13,9 @@ set termencoding=utf-8
 set encoding=utf-8
 set fileformats=unix,dos,mac
 
-
+if has("unix")
+    language messages C.UTF-8
+endif
 
 " fu! SaveSess()
     " execute 'mksession! ' . g:rootTmpPath . '/.session.vim'
@@ -74,3 +76,4 @@ set backspace=indent,eol,start
 set ruler                           " show line and column number
 syntax on               " syntax highlighting
 set showcmd             " show (partial) command in status line
+set langmenu=en_US
