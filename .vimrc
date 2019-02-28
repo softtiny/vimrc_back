@@ -18,6 +18,8 @@ exec 'source '.s:path.'/vimfiles/autoload/plug.vim'
 " - Avoid using standard Vim directory names like 'plugin'
 " https://github.com/junegunn/vim-plug
 call plug#begin(s:path.'/vimfiles/plugged')
+Plug 'dracula/vim', { 'as': 'dracula' }
+" Initialize plugin system
 " https://github.com/mattn/emmet-vim
 Plug 'mattn/emmet-vim'
 " https://github.com/scrooloose/nerdtree
@@ -32,15 +34,12 @@ Plug 'jiangmiao/auto-pairs'
 " A code-completion engine for Vim
 Plug 'Valloric/YouCompleteMe'
 " A dark theme for Vim and 50+ apps
-Plug 'dracula/vim', { 'as': 'dracula' }
-" Initialize plugin system
 call plug#end() 
 
-
+exec 'source '.s:path.'/plugconfig/dracula'
 exec 'source '.s:path.'/plugconfig/nerdtree'
 exec 'source '.s:path.'/plugconfig/aireline_devicons_nerd_fonts'
 exec 'source '.s:path.'/plugconfig/YouCompleteMe'
-exec 'source '.s:path.'/plugconfig/dracula'
 exec 'source '.s:path.'/common/config'
 exec 'source '.s:path.'/gvimconf/config'
 exec 'source '.s:path.'/winconf/config'
