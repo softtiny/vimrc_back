@@ -77,3 +77,6 @@ set ruler                           " show line and column number
 syntax on               " syntax highlighting
 set showcmd             " show (partial) command in status line
 set langmenu=en_US
+
+" Then you can paste with Ctrl + Shift + V , if you're in a terminal emulator like gnome-terminal (or select "Paste" from the right-click menu). You can also type :set paste in vim before you paste to disable automated indenting, etc. Then :set nopaste after you've pasted the content
+set paste
