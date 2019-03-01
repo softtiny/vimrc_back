@@ -79,4 +79,7 @@ set showcmd             " show (partial) command in status line
 set langmenu=en_US
 
 " Then you can paste with Ctrl + Shift + V , if you're in a terminal emulator like gnome-terminal (or select "Paste" from the right-click menu). You can also type :set paste in vim before you paste to disable automated indenting, etc. Then :set nopaste after you've pasted the content
-set paste
+" set paste
+
+" how-to-break-a-line-in-vim-in-normal-mode then just press Ctrl-J whenever you want to split a line.
+" noremap <NL> i<CR><ESC>
