@@ -9,4 +9,12 @@ if has("win32") || has("win64") || has("win16")
 "	  finish
 "	endif
 	let g:skip_loading_mswin=1
+
+" Running sql queries against a DBMS: vim-sql-workbench
+let g:sw_exe = 'C:\home\mac\home\app\Workbench-Build124-with-optional-libs\sqlwbconsole.exe'
+let g:sw_config_dir = 'C:\home\mac\home\app\Workbench-Build124-with-optional-libs\'
+let g:sw_delete_tmp = 0
+let g:sw_save_resultsets = 1
+let g:sw_log_to_file = 1
+let g:sw_tmp = 'C:\home\mac\home\app\Workbench-Build124-with-optional-libs\'
 endif

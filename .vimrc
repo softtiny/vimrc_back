@@ -37,6 +37,11 @@ Plug 'Valloric/YouCompleteMe'
 " Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 Plug 'ctrlpvim/ctrlp.vim'
 
+
+" dispatch.vim: Asynchronous build and test dispatcher
+Plug 'tpope/vim-dispatch'
+
+
 call plug#end() 
 
 exec 'source '.s:path.'/plugconfig/dracula'
