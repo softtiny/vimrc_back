@@ -3,4 +3,10 @@ if has("win32") || has("win64") || has("win16")
 "     set shellpipe=|
 "     set shellredir=>
 "     set shellcmdflag=
+
+" Bail out if this isn't wanted.
+"	if exists("g:skip_loading_mswin") && g:skip_loading_mswin
+"	  finish
+"	endif
+	let g:skip_loading_mswin=1
 endif
