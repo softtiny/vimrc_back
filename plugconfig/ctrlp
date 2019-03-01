@@ -1,0 +1,32 @@
+
+" Exclude files and directories using Vim's wildignore and CtrlP's own g:ctrlp_custom_ignore. If a custom listing command is being used, exclusions are ignored:
+set wildignore+=*.swp,*.zip,*.exe,*.so  " Windows
+
+let g:ctrlp_map = '<leader>p'
+let g:ctrlp_cmd = 'CtrlP'
+map <leader>f :CtrlPMRU<CR>
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
+    \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc)$',
+    \ }
+let g:ctrlp_match_window_bottom=1
+let g:ctrlp_max_height=15
+let g:ctrlp_match_window_reversed=0
+let g:ctrlp_mruf_max=500
+let g:ctrlp_follow_symlinks=1
+
+" When invoked without an explicit starting directory, CtrlP will set its local working directory according to this variable:
+" 'c' - the directory of the current file.
+" 'a' - the directory of the current file, unless it is a subdirectory of the cwd
+" 'r' - the nearest ancestor of the current file that contains one of these " directories or files: .git .hg .svn .bzr _darcs
+" 'w' - modifier to "r": start search from the cwd instead of the current file's " directory
+" 0 or '' (empty string) - disable this feature.
+" If none of the default markers (.git .hg .svn .bzr _darcs) are present in a project, you can define additional ones with g:ctrlp_root_markers:
+" let g:ctrlp_root_markers = ['pom.xml', '.p4ignore']
+" https://stackoverflow.com/questions/21888869/how-to-make-ctrlps-search-directory-change-according-to-nerdtrees-root
+let g:ctrlp_working_path_mode = 'rw'
+
+
+" To see the current value currently defined for <leader>, use:
+" let mapleader
+" It may be undefined if not previously set, defaulting instead to a backslash \
