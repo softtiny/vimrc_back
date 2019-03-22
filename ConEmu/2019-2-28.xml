@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-03-02 12:43:41" build="190225">
+		<key name=".Vanilla" modified="2019-03-22 12:32:35" build="190225">
 			<value name="Language" type="string" data="en"/>
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
@@ -82,10 +82,10 @@
 			<value name="JumpListAutoUpdate" type="hex" data="01"/>
 			<value name="SaveCmdHistory" type="hex" data="01"/>
 			<value name="SingleInstance" type="hex" data="00"/>
-			<value name="ShowHelpTooltips" type="hex" data="01"/>
-			<value name="Multi" type="hex" data="01"/>
-			<value name="Multi.ShowButtons" type="hex" data="01"/>
-			<value name="Multi.ShowSearch" type="hex" data="01"/>
+			<value name="ShowHelpTooltips" type="hex" data="00"/>
+			<value name="Multi" type="hex" data="00"/>
+			<value name="Multi.ShowButtons" type="hex" data="00"/>
+			<value name="Multi.ShowSearch" type="hex" data="00"/>
 			<value name="Multi.NumberInCaption" type="hex" data="00"/>
 			<value name="Multi.CloseConfirmFlags" type="hex" data="04"/>
 			<value name="Multi.NewConfirm" type="hex" data="00"/>
@@ -104,7 +104,7 @@
 			<value name="Multi.SplitHeight" type="hex" data="04"/>
 			<value name="KeyboardHooks" type="hex" data="01"/>
 			<value name="FontName" type="string" data="DroidSansMono NF"/>
-			<value name="FontName2" type="string" data="Monoid NF"/>
+			<value name="FontName2" type="string" data="Microsoft YaHei"/>
 			<value name="FontAutoSize" type="hex" data="00"/>
 			<value name="FontSize" type="ulong" data="18"/>
 			<value name="FontSizeX" type="ulong" data="0"/>
@@ -118,9 +118,9 @@
 			<value name="FontItalic" type="hex" data="00"/>
 			<value name="Monospace" type="hex" data="01"/>
 			<value name="CompressLongStrings" type="hex" data="01"/>
-			<value name="BackGround Image show" type="hex" data="00"/>
-			<value name="BackGround Image" type="string" data="c:\back.bmp"/>
-			<value name="bgImageDarker" type="hex" data="FF"/>
+			<value name="BackGround Image show" type="hex" data="01"/>
+			<value name="BackGround Image" type="string" data="C:\Users\root\Pictures\astrophotography-wallpaper-1920x1080.jpg"/>
+			<value name="bgImageDarker" type="hex" data="65"/>
 			<value name="bgImageColors" type="dword" data="ffffffff"/>
 			<value name="bgOperation" type="hex" data="00"/>
 			<value name="bgPluginAllowed" type="hex" data="01"/>
@@ -134,10 +134,10 @@
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
-			<value name="WindowMode" type="dword" data="00000520"/>
-			<value name="ConWnd X" type="long" data="49"/>
+			<value name="WindowMode" type="dword" data="00000521"/>
+			<value name="ConWnd X" type="long" data="56"/>
 			<value name="ConWnd Y" type="long" data="0"/>
-			<value name="LastMonitor" type="string" data="0,0,1366,728"/>
+			<value name="LastMonitor" type="string" data="0,0,1366,768"/>
 			<value name="ConWnd Width" type="dword" data="0000003a"/>
 			<value name="ConWnd Height" type="dword" data="00000014"/>
 			<value name="16bit Height" type="ulong" data="0"/>
@@ -197,7 +197,7 @@
 			<value name="CTS.SelectText" type="hex" data="01"/>
 			<value name="CTS.HtmlFormat" type="hex" data="00"/>
 			<value name="CTS.ForceLocale" type="dword" data="00000000"/>
-			<value name="CTS.RBtnAction" type="hex" data="03"/>
+			<value name="CTS.RBtnAction" type="hex" data="00"/>
 			<value name="CTS.MBtnAction" type="hex" data="00"/>
 			<value name="CTS.ColorIndex" type="hex" data="E0"/>
 			<value name="ClipboardConfirmEnter" type="hex" data="01"/>
@@ -207,11 +207,11 @@
 			<value name="FarGotoEditorPath" type="string" data='far.exe /e%1:%2 "%3"'/>
 			<value name="HighlightMouseRow" type="hex" data="00"/>
 			<value name="HighlightMouseCol" type="hex" data="00"/>
-			<value name="FixFarBorders" type="hex" data="01"/>
+			<value name="FixFarBorders" type="hex" data="00"/>
 			<value name="Anti-aliasing2" type="hex" data="00"/>
 			<value name="FixFarBordersRanges" type="string" data="2013-25C4;"/>
 			<value name="ExtendUCharMap" type="hex" data="01"/>
-			<value name="EnhanceGraphics" type="hex" data="01"/>
+			<value name="EnhanceGraphics" type="hex" data="00"/>
 			<value name="EnhanceButtons" type="hex" data="00"/>
 			<value name="PartBrush75" type="hex" data="C8"/>
 			<value name="PartBrush50" type="hex" data="96"/>
@@ -235,8 +235,8 @@
 			<value name="DisableMouse" type="hex" data="00"/>
 			<value name="RSelectionFix" type="hex" data="01"/>
 			<value name="MouseSkipActivation" type="hex" data="01"/>
-			<value name="MouseSkipMoving" type="hex" data="01"/>
-			<value name="MouseDragWindow" type="hex" data="01"/>
+			<value name="MouseSkipMoving" type="hex" data="00"/>
+			<value name="MouseDragWindow" type="hex" data="00"/>
 			<value name="FarHourglass" type="hex" data="01"/>
 			<value name="FarHourglassDelay" type="ulong" data="500"/>
 			<value name="Dnd" type="hex" data="01"/>
@@ -250,7 +250,7 @@
 			<value name="DragPanel" type="hex" data="02"/>
 			<value name="DragPanelBothEdges" type="hex" data="00"/>
 			<value name="KeyBarRClick" type="hex" data="01"/>
-			<value name="StatusBar.Show" type="hex" data="01"/>
+			<value name="StatusBar.Show" type="hex" data="00"/>
 			<value name="StatusBar.Flags" type="dword" data="00000002"/>
 			<value name="StatusFontFace" type="string" data="Segoe UI"/>
 			<value name="StatusFontCharSet" type="ulong" data="0"/>
@@ -301,11 +301,11 @@
 			<value name="StatusBar.Hide.Title" type="hex" data="01"/>
 			<value name="StatusBar.Hide.Time" type="hex" data="01"/>
 			<value name="StatusBar.Hide.Resize" type="hex" data="00"/>
-			<value name="Tabs" type="hex" data="01"/>
+			<value name="Tabs" type="hex" data="00"/>
 			<value name="TabsLocation" type="hex" data="00"/>
 			<value name="TabIcons" type="hex" data="01"/>
 			<value name="OneTabPerGroup" type="hex" data="00"/>
-			<value name="ActivateSplitMouseOver" type="hex" data="01"/>
+			<value name="ActivateSplitMouseOver" type="hex" data="00"/>
 			<value name="TabSelf" type="hex" data="01"/>
 			<value name="TabLazy" type="hex" data="01"/>
 			<value name="TabFlashChanged" type="long" data="8"/>
@@ -400,11 +400,11 @@
 			<value name="Update.DownloadPath" type="string" data="%TEMP%\ConEmu"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
-			<key name="HotKeys" modified="2019-03-02 12:47:08" build="190225">
+			<key name="HotKeys" modified="2019-03-22 12:25:52" build="190225">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="000000a2"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
-				<value name="MinimizeRestore" type="dword" data="00a5a3c0"/>
+				<value name="MinimizeRestore" type="dword" data="0010117b"/>
 				<value name="MinimizeRestore2" type="dword" data="00000000"/>
 				<value name="GlobalRestore" type="dword" data="00000000"/>
 				<value name="CdExplorerPath" type="dword" data="00000000"/>
