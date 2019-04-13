@@ -61,7 +61,7 @@ au BufRead,BufNewFile *.py set expandtab
 " configure editor with tabs and nice stuff...
 " --------------------------------------------------------------------------------
 set expandtab           " enter spaces when tab is pressed
-set textwidth=120       " break lines when line length increases
+set textwidth=0       " break lines when line length increases
 " Always keep 'tabstop' at 8, set 'softtabstop' and 'shiftwidth' to 4 (or 3 or whatever you prefer) and use 'noexpandtab'. Then Vim will use a mix of tabs and spaces, but typing and will behave like a tab appears every 4 (or 3) characters.
 
 " Note: Setting 'tabstop' to any other value than 8 can make your file appear wrong in many places (e.g., when printing it).
