@@ -1,4 +1,6 @@
 set nocompatible
+" Block in insert mode
+let &t_SI = "\<Esc>]50;CursorShape=7\x7"
 " current vimrc parent folder path
 let s:path = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 let g:rootTmpPath=s:path.'/tmp'
@@ -12,6 +14,7 @@ exec  'set undodir='.s:path.'/tmp/.backup'
 
 
 exec 'source '.s:path.'/vimfiles/autoload/plug.vim'
+
 " set $PATHMYVIM to file papth
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
@@ -24,14 +27,12 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 " https://github.com/mattn/emmet-vim
 Plug 'mattn/emmet-vim'
 " https://github.com/scrooloose/nerdtree
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 " Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more
 Plug 'ryanoasis/vim-devicons'
 " lean & mean status/tabline for vim that's light as air
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" Insert or delete brackets, parens, quotes in pair.
-Plug 'jiangmiao/auto-pairs'
 " A code-completion engine for Vim
 Plug 'ycm-core/YouCompleteMe'
 " Full path fuzzy file, buffer, mru, tag, ... finder for Vim.

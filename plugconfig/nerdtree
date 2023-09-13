@@ -49,5 +49,5 @@ call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 call NERDTreeHighlightFile('py', 'green', 'none', 'green', '#151515')
 
-let g:NERDTreeDirArrowExpandable = ''
-let g:NERDTreeDirArrowCollapsible = ''
+"let g:NERDTreeDirArrowExpandable = '+'
+"let g:NERDTreeDirArrowCollapsible = '-'
