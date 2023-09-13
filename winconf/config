@@ -1,20 +1,7 @@
 if has("win32") || has("win64") || has("win16")
-      set shell=C:\Windows\System32\WindowsPowerShell\v1.0\powershell
+      
 "     set shellpipe=|
 "     set shellredir=>
 "     set shellcmdflag=
-
-" Bail out if this isn't wanted.
-"	if exists("g:skip_loading_mswin") && g:skip_loading_mswin
-"	  finish
-"	endif
-	let g:skip_loading_mswin=1
-
-" Running sql queries against a DBMS: vim-sql-workbench
-let g:sw_exe = 'C:\home\mac\home\app\Workbench-Build124-with-optional-libs\sqlwbconsole.exe'
-let g:sw_config_dir = 'C:\home\mac\home\app\Workbench-Build124-with-optional-libs\'
-let g:sw_delete_tmp = 0
-let g:sw_save_resultsets = 1
-let g:sw_log_to_file = 1
-let g:sw_tmp = 'C:\home\mac\home\app\Workbench-Build124-with-optional-libs\'
+	set shell=C:\home\mac\home\app\shell\nu-0.84.0-x86_64-pc-windows-msvc\nu
 endif
