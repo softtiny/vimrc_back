@@ -4,4 +4,5 @@ if has("win32") || has("win64") || has("win16")
 "     set shellredir=>
 "     set shellcmdflag=
 	set shell=C:\home\mac\home\app\shell\nu-0.84.0-x86_64-pc-windows-msvc\nu
+	let g:skip_loading_mswin=1
 endif

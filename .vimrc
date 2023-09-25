@@ -42,8 +42,12 @@ Plug 'ctrlpvim/ctrlp.vim'
 " dispatch.vim: Asynchronous build and test dispatcher
 Plug 'tpope/vim-dispatch'
 
+Plug 'machakann/vim-sandwich'
+Plug 'cohama/lexima.vim'
+" Plug 'tpope/vim-endwise'
 
 call plug#end() 
+
 
 exec 'source '.s:path.'/plugconfig/dracula'
 exec 'source '.s:path.'/plugconfig/nerdtree'
@@ -53,3 +57,4 @@ exec 'source '.s:path.'/plugconfig/ctrlp'
 exec 'source '.s:path.'/common/config'
 exec 'source '.s:path.'/gvimconf/config'
 exec 'source '.s:path.'/winconf/config'
+exec 'source '.s:path.'/info/info'
