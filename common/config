@@ -83,3 +83,14 @@ set langmenu=en_US
 
 " how-to-break-a-line-in-vim-in-normal-mode then just press Ctrl-J whenever you want to split a line.
 " noremap <NL> i<CR><ESC>
+
+
+" saves the current cursor position, centers the view, and then restores the cursor position.
+
+autocmd CursorMoved,CursorMovedI * call Center_cursor()
+
+function! Center_cursor()
+    let pos = getpos(".")
+    normal! zz
+    call setpos(".", pos)
+endfunction
