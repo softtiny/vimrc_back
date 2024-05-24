@@ -35,6 +35,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " A code-completion engine for Vim
 Plug 'ycm-core/YouCompleteMe'
+Plug 'sirver/ultisnips'
 " Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 Plug 'ctrlpvim/ctrlp.vim'
 
@@ -58,3 +59,10 @@ exec 'source '.s:path.'/common/config'
 exec 'source '.s:path.'/gvimconf/config'
 exec 'source '.s:path.'/winconf/config'
 exec 'source '.s:path.'/info/info'
+
+
+" UltiSnips start
+let current_directory = getcwd()
+let g:UltiSnipsSnippetDirectories = ['UltiSnips', current_directory . '/.vim/']
+let g:UltiSnipsExpandTrigger = "<c-o>"
+" UltiSnips end
